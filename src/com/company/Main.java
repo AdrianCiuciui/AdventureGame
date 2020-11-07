@@ -57,6 +57,16 @@ public class Main {
 
             String direction = scanner.nextLine().toUpperCase();
 
+            if (direction.contains("NORTH")) {
+                direction = "N";
+            } else if (direction.contains("SOUTH")) {
+                direction = "S";
+            } else if (direction.contains("EAST")) {
+                direction = "E";
+            } else if (direction.contains("WEST")) {
+                direction = "W";
+            }
+
             if (exits.containsKey(direction)) {
                 loc = exits.get(direction);
             } else {

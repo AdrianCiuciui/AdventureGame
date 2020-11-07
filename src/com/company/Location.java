@@ -30,6 +30,4 @@ public class Location {
     public Map<String, Integer> getExists() {
         return new HashMap<>(exists);
     }
-
-
 }
